@@ -11,13 +11,12 @@ public class Task_D {
                 ar[i] = sc.nextInt();
             }
             int z = 0;
-            for (int i = ar.length - 1; 0 < i; i--) {
+            for (int i = ar.length-1; 0 < i; i--) {
                 z ^= ar[i];
             }
             if (z == ar[0]) {
                 System.out.println(ar[0]);
             }
-
 
         }
 
