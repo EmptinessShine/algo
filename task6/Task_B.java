@@ -15,7 +15,7 @@ public class Task_B {
                 }
             }
 
-            arr(arr);
+            AscendingSort(arr);
 
             for (int i = 0; i < a; i++) {
                 if (b >= arr[0][i]) {
@@ -27,7 +27,7 @@ public class Task_B {
         }
     }
 
-    public static int[][] arr(int[][] ar) {
+    public static void AscendingSort(int[][] ar) {
 
         for (int i = 0; i < ar[0].length - 1; i++) {
             for (int j = 0; j < ar[0].length - 1 - i; j++) {
@@ -42,6 +42,5 @@ public class Task_B {
                 }
             }
         }
-        return ar;
     }
 }
