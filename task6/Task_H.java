@@ -8,19 +8,17 @@ public class Task_H {
             int NumberOfSpellCast = 0;
             List<Integer> ListOfHealth = new ArrayList<>();
             int b = sc.nextInt();
-            for (int i = 0; i < b; i++) {
+            while (b-- >0) {
                 int f = sc.nextInt();
                 if (f >= 2) NumberOfSpellCast++;
                 else ListOfHealth.add(f);
             }
-            int NumberOfOneHp = Collections.frequency(ListOfHealth, 1);
 
-            if (NumberOfOneHp % 2 == 0) {
-                NumberOfSpellCast += NumberOfOneHp / 2;
+            if (ListOfHealth.size() % 2 == 0) {
+                System.out.println(NumberOfSpellCast + ListOfHealth.size() / 2);
             } else {
-                NumberOfSpellCast += (NumberOfOneHp + 1) / 2;
+                System.out.println(NumberOfSpellCast + ListOfHealth.size() / 2 + 1);
             }
-            System.out.println(NumberOfSpellCast);
 
 
         }
